@@ -1,0 +1,50 @@
+/* =========================
+   App Layout
+   ========================= */
+h1 {
+ text-align: center;
+ color: aliceblue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 30px;
+
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* =========================
+   Left Panel
+   ========================= */
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =========================
+   Right Panel
+   ========================= */
+
+.right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* =========================
+   Responsive Layout
+   ========================= */
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .right-panel {
+    order: -1;
+  }
+}

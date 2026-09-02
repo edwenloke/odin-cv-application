@@ -1,0 +1,160 @@
+/* =========================
+   Form Sections
+   ========================= */
+
+.personal-info,
+.education,
+.experience {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info h2,
+.education h2,
+.experience h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Forms
+   ========================= */
+
+.personal-info-form,
+.education-form,
+.experience-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* =========================
+   Labels
+   ========================= */
+
+.personal-info-form label,
+.education-form label,
+.experience-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* =========================
+   Inputs
+   ========================= */
+
+.personal-info-form input,
+.education-form input,
+.experience-form input,
+.experience-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.personal-info-form input:focus,
+.education-form input:focus,
+.experience-form input:focus,
+.experience-form textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* =========================
+   Description
+   ========================= */
+
+.experience-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* =========================
+   Main Buttons
+   ========================= */
+
+.submit-btn,
+.save-btn,
+.add-education-btn,
+.add-experience-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-education-btn,
+.add-experience-btn {
+  margin-top: 10px;
+}
+
+.submit-btn:hover,
+.save-btn:hover,
+.add-education-btn:hover,
+.add-experience-btn:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   Save / Cancel
+   ========================= */
+
+.save-cancel-btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =========================
+   Saved Education / Experience
+   ========================= */
+
+.saved-education-card,
+.saved-experience-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.saved-education,
+.saved-experience {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* =========================
+   Edit / Delete Buttons
+   ========================= */
+
+.edit-delete-btn-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.edit-icon-btn,
+.delete-icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.edit-icon-btn:hover,
+.delete-icon-btn:hover {
+  opacity: 0.7;
+}

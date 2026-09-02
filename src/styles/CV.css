@@ -1,0 +1,147 @@
+/* =========================
+   CV Container
+   ========================= */
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =========================
+   CV Paper
+   ========================= */
+
+.cv-preview {
+  width: 200mm;
+  min-height: 297mm;
+  padding: 25mm;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   General Information
+   ========================= */
+
+.cv-general-info {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+}
+
+.cv-general-info h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.email-phone {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =========================
+   CV Sections
+   ========================= */
+
+.cv-education-info,
+.cv-experience-info {
+  margin-top: 25px;
+}
+
+.cv-education-info h2,
+.cv-experience-info h2 {
+  font-size: 18px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+/* =========================
+   Education
+   ========================= */
+
+.cv-education-card {
+  margin-bottom: 18px;
+}
+
+.cv-education-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cv-study-title,
+.cv-education-date {
+  margin: 4px 0;
+}
+
+/* =========================
+   Experience
+   ========================= */
+
+.cv-experience-card {
+  margin-bottom: 20px;
+}
+
+.cv-experience-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cv-position {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.cv-experience-date {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.cv-experience-description {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* =========================
+   Print Button
+   ========================= */
+
+.print-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  opacity: 0.85;
+}
+
+/* Printing */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .cv-preview,
+  .cv-preview * {
+    visibility: visible;
+  }
+
+  .cv-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 210mm;
+    min-height: 297mm;
+
+    box-shadow: none;
+  }
+}
