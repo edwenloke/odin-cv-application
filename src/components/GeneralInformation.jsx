@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function GeneralInformation({
   name,
   setName,
@@ -9,6 +10,7 @@ function GeneralInformation({
   setSubmittedInfo,
 }) {
   const [isEditing, setIsEditing] = useState(true);
+
   return (
     <section className="personal-info">
       <h2>Personal Information</h2>
@@ -63,7 +65,10 @@ function GeneralInformation({
           <button
             className="general-info-edit-btn"
             type="button"
-            onClick={() => setIsEditing(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsEditing(true);
+            }}
           >
             Edit
           </button>
